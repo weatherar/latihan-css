@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+html {
+	font-family: "Open Sans", sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(184, 184, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100 vh;
+}
+.panel {
+	background-color: white;
+	border-radius: 10px;
+	padding: 15px 25px;
+	width: 100%;
+	max-width: 960px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	text-transform: uppercase;
+}
+.princing-plan {
+	border-bottom: 1px solid #e1f1fe;
+}
+.princing-plan:last-child {
+	border-bottom: none;
+}
+.img-princing{
+	margin-bottom: 25px;
+	max-width: 100%;
+}
+.princing-header {
+	color: #888;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.princing-features{
+	margin: 50px 0 25px;
+	color: #015ff9;
+    list-style-type: none;
+
+
+}
+.princing-features-item{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+}
+.princing-features-item:last-child{
+    border-bottom: 1px solid #e1f1ff;
+}
+.princing-price{
+    color: #015ff9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+.princing-button{
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348fe3;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+}
+.princing-button:hover,
+.princing-button:focus{
+    background-color: #e1f1ff;
+}
+
+.princing-button.is-featured{
+   background-color: #48aaff;
+    color: white;
+}
+.princing-button.is-featured:hover,
+.princing-button.is-featured:focus{
+    background-color: #269aff;
+    color:aliceblue;
+}
+
+@media(min-width: 900px){
+    .panel{
+        flex-direction: row;
+    }
+    .princing-plan{
+        border-bottom: none;
+        border-right: 1 px solid #c9d6e2;
+        padding: 25px 50px;
+    }
+    .princing-plan:last-child{
+        border-right: none;
+    }
+}
